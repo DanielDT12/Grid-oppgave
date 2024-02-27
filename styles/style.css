@@ -1,0 +1,63 @@
+/* CUSTOM PROPERTIES */
+:root {
+    /* FONT SIZE */
+    --fs-900: 3rem;
+    --fs-700: 2rem;
+    --fs-600: 1.5rem;
+    --fs-400: 1rem;
+
+    /* HEADING FONTS */
+    --ff-heading: "Ubuntu", sans-serif;
+    --fw-heading-bold: 700;
+    --fw-heading-regular: 500;
+
+    /* PRIMARY FONTS */
+    --ff-regular: "Roboto", sans-serif;
+    --fw-bold: 900;
+    --fw-regular: 400;
+
+    /* PRIMARY COLORS */
+    --clr-bg-900: hsl(255, 13%, 6%);
+    --clr-element-bg-800: hsl(257, 11%, 12%);
+
+    /* ACCENT COLORS */
+    --clr-accent-teal: hsl(180, 92%, 66%);
+    --clr-accent-green: hsl(115, 92%, 66%);
+    --clr-accent-red: hsl(0, 100%, 67%);
+    --clr-accent-orange: hsl(10, 92%, 66%);
+    --clr-accent-purple: hsl(250, 92%, 66%);
+    --clr-accent-pink: hsl(330, 92%, 66%);
+
+    /* TEXT COLORS */
+    --clr-txt-head: hsl(270, 5%, 92%);
+    --clr-txt: hsl(254, 12%, 72%);
+
+    /* TEAL GRADIENT */
+    --clr-grad-teal-top: hsl(180, 23%, 14%);
+    --clr-grad-teal-bottom: hsl(180, 24%, 29%);
+
+    /* PURPLE GRADIENT */
+    --clr-grad-purple-top: hsl(247, 23%, 14%);
+    --clr-grad-purple-bottom: hsl(250, 24%, 29%);
+}
+/* CUSTOM PROPERTIES */
+
+/* CSS RESET */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img,
+picture,
+svg {
+    display: block;
+    max-width: 100%;
+}
+/* CSS RESET */
