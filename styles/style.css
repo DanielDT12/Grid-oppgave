@@ -69,6 +69,11 @@ body {
     background-color: var(--clr-bg-900);
 }
 
+/* PLACEHOLDER */
+main {
+    min-height: 100vh;
+}
+
 .primary-hdr {
     display: flex;
     flex-wrap: wrap;
@@ -105,13 +110,13 @@ body {
     border: 1px solid red;
 }
 
-.primary-nav-list {
+.nav-list {
     display: flex;
     gap: 2rem;
     list-style: none;
 }
 
-.primary-nav-list a {
+.nav-list a {
     color: var(--clr-txt-head);
     font-size: var(--fs-500);
     font-weight: var(--fw-heading-regular);
@@ -146,4 +151,49 @@ body {
     font-size: var(--fs-900);
     font-family: var(--ff-heading);
     font-weight: var(--fw-heading-bold);
+}
+
+.primary-ftr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid var(--clr-element-bg-800);
+}
+
+.ftr-info {
+    display: grid;
+    place-items: center;
+    gap: 2rem;
+    margin-block: 3rem;
+}
+
+
+.github-link {
+    max-width: 10rem;
+    border-radius: .25rem;
+    padding: .5rem;
+    color: var(--clr-bg-900);
+    background-color: var(--clr-accent-teal);
+    font-size: var(--fs-500);
+    font-family: var(--ff-heading);
+    font-weight: var(--fw-heading-bold);
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .5s;
+}
+
+.github-link:hover {
+    transition: .5s;
+    box-shadow: 0 0 1rem var(--clr-accent-pink);
+}
+
+.ftr-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: var(--fs-500);
+    color: var(--clr-txt-head);
 }
