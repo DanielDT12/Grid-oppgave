@@ -175,8 +175,9 @@ main {
     grid-template-rows: auto;
     margin: 3rem 10rem;
 }
+/* GRID CONTAINER MAIN */
 
-
+/* INTRODUKSJON CONTAINER MED DRACULA BILDE */
 .keyboard-intro {
     grid-area: 1 / 1 / 2 / span 2;
     padding: 2rem 4rem 2rem 2rem;
@@ -191,11 +192,32 @@ main {
     max-width: 20rem;
     margin-left: auto;
 }
+/* INTRODUKSJON CONTAINER MED DRACULA BILDE */
 
+/* VIDEO AV TASTATUR */
 .iframe-video {
     grid-area: 1 / 3 / 2 / 4;
     background-color: var(--clr-element-bg-800);
 }
+/* VIDEO AV TASTATUR */
+
+/* TASTATUR SAMLING CONTAINER MED DEKORASJON BANNER */
+.keyboard-picture {
+    grid-area: 2 / 1 / 3 / span 3;
+    background-color: var(--clr-element-bg-800);
+}
+
+.keybord-picture-container {
+    display: grid;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.keybord-picture-container img {
+    border-radius: 2rem;
+}
+
+/* TASTATUR SAMLING CONTAINER MED DEKORASJON BANNER */
 
 /* MAIN SECTION */
 
@@ -254,6 +276,20 @@ main {
     align-items: center;
 }
 
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-column-center {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .p-txt {
     font-family: var(--ff-regular);
     font-size: var(--fs-400);
@@ -269,5 +305,25 @@ main {
 .std-border {
     border: 4px dashed var(--clr-bg-900);
     border-radius: 1.75rem;
+}
+
+.decorative-banner {
+    max-height: 12rem;
+    border-radius: 1.75rem 1.75rem 0 0;
+    padding: 3rem;
+    background-image: linear-gradient(to bottom, var(--clr-grad-purple-top), var(--clr-grad-purple-bottom));
+}
+
+.mrkd-txt-teal-bold {
+    border-radius: .2rem;
+    padding: .1rem;
+    font-weight: var(--fw-bold);
+    color: var(--clr-bg-900);
+    background-color: var(--clr-accent-teal);
+    opacity: 1;
+}
+
+.moon-stars-icon {
+    max-width: 10rem;
 }
 /* UTILITY CLASSES */
