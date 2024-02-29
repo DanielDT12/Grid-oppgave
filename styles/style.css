@@ -10,11 +10,12 @@
     /* HEADING FONTS */
     --ff-heading: "Ubuntu", sans-serif;
     --fw-heading-bold: 700;
+    --fw-heading-semi-bold: 600;
     --fw-heading-regular: 500;
 
     /* PRIMARY FONTS */
     --ff-regular: "Roboto", sans-serif;
-    --fw-bold: 900;
+    --fw-bold: 700;
     --fw-regular: 400;
 
     /* PRIMARY COLORS */
@@ -76,11 +77,18 @@ body {
     color: var(--clr-txt);
     background-color: var(--clr-bg-900);
 }
-
-/* PLACEHOLDER */
-main {
-    min-height: 100vh;
+/* CUSTOM SCROLL BAR */
+::-webkit-scrollbar {
+    width: .75rem;
 }
+
+::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background: var(--clr-txt);
+}
+/* CUSTOM SCROLL BAR */
+
+
 
 /* HEADER SECTION ↓ */
 .primary-hdr {
@@ -133,7 +141,8 @@ main {
 }
 /* HEADER SECTION ↑ */
 
-/* MAIN SECTION */
+/* MAIN SECTION ↓ */
+
 /* CASTLE AND MOON DESIGN SECTION */
 .h1-design-container {
     display: flex;
@@ -215,11 +224,12 @@ main {
 
 .keybord-picture-container img {
     border-radius: 2rem;
+    box-shadow: 0 0 .75rem var(--clr-bg-900);
 }
 
 /* TASTATUR SAMLING CONTAINER MED DEKORASJON BANNER */
 
-/* MAIN SECTION */
+/* MAIN SECTION ↑ */
 
 
 /* FOOTER SECTION */
