@@ -268,7 +268,6 @@ body {
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
     margin: 3rem 10rem;
 }
 
@@ -278,15 +277,35 @@ body {
     padding: 1rem;
 }
 
-    .pc-text-container img {
-        border-radius: 1rem;
-        box-shadow: 0 0 .75rem var(--clr-bg-900);
-    }
-
 .pc-setup-img-container {
     grid-area: 1 / 2 / 2 / 4;
     background-color: var(--clr-element-bg-800);
     padding: 1rem;
+}
+
+.games-container-elden {
+    grid-area: 2 / 1 / span 1 / span 1;
+    background-color: var(--clr-element-bg-800);
+    padding: 1rem;
+}
+
+.games-container-zelda {
+    grid-area: 2 / 2 / span 1 / span 1;
+    background-color: var(--clr-element-bg-800);
+    padding: 1rem;
+}
+
+.games-container-fantasy {
+    grid-area: 2 / 3 / span 1 / span 1;
+    background-color: var(--clr-element-bg-800);
+    padding: 1rem;
+}
+
+.games-img {
+    max-height: 420px;
+    margin: auto;
+    border-radius: .4rem;
+    box-shadow: 0 0 .75rem var(--clr-bg-900);
 }
 
 /* FOOTER SECTION */
@@ -440,17 +459,37 @@ body {
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 1400px) {
-    .main-page-content {
+    .keyboard-section {
         display: grid;
         gap: 2rem;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
+        margin: 3rem 5rem;
+    }
+
+    .pc-games-section {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(3, 1fr);
         margin: 3rem 5rem;
     }
 }
 
+@media only screen and (max-width: 1100px) {
+    .games-container-elden h2 {
+        font-size: var(--fs-600);
+    }
+    
+    .games-container-zelda h2 {
+        font-size: var(--fs-600);
+    }
+    
+    .games-container-fantasy h2 {
+        font-size: var(--fs-600);
+    }
+}
+
 @media only screen and (max-width: 960px) {
-    .main-page-content {
+    .keyboard-section {
         display: grid;
         gap: 2rem;
         grid-template-columns: repeat(3, 1fr);
@@ -485,10 +524,62 @@ body {
         grid-row: 5 / 6;
         padding: 2rem;
     }
+
+    .pc-games-section {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 3rem 2rem;
+    }
+    
+    .pc-text-container {
+        grid-column: 1 / 4;
+        grid-row-start: 1;
+        padding: 1rem;
+    }
+    
+    .pc-setup-img-container {
+        grid-column-start: 1;
+        grid-row: 2 / 3;
+        padding: 1rem;
+    }
+    
+    .games-container-elden {
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
+        display: flex;
+        padding: 1rem;
+    }
+        .elden {
+            max-width: 20rem;
+            margin-inline: 2rem;
+        }
+    
+    .games-container-zelda {
+        grid-column: 1 / 4;
+        grid-row: 4 / 5;
+        display: flex;
+        padding: 1rem;
+    }
+        .zelda {
+            max-width: 20rem;
+            margin-inline: 2rem;
+        }
+    
+    .games-container-fantasy {
+        grid-column: 1 / 4;
+        grid-row: 5 / 6;
+        display: flex;
+        padding: 1rem;
+    }
+        .fantasy {
+            max-width: 20rem;
+            margin-inline: 2rem;
+        }
 }
 
 @media only screen and (max-width: 650px) {
-    .main-page-content {
+    .keyboard-section {
         display: grid;
         gap: 2rem;
         grid-template-columns: repeat(3, 1fr);
@@ -504,6 +595,61 @@ body {
     .decorative-banner img {
         display: none;
     }
+
+    .pc-games-section {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 3rem 2rem;
+    }
+    
+    .pc-text-container {
+        grid-column: 1 / 4;
+        grid-row-start: 1;
+        padding: 1rem;
+    }
+    
+    .pc-setup-img-container {
+        grid-column-start: 1;
+        grid-row: 2 / 3;
+        padding: 1rem;
+    }
+    
+    .games-container-elden {
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
+        display: block;
+        padding: 1rem;
+    }
+
+        .elden {
+            max-width: 100%;
+            margin: auto;
+        }
+    
+    .games-container-zelda {
+        grid-column: 1 / 4;
+        grid-row: 4 / 5;
+        display: block;
+        padding: 1rem;
+    }
+    
+        .zelda {
+            max-width: 100%;
+            margin: auto;
+        }
+    
+    .games-container-fantasy {
+        grid-column: 1 / 4;
+        grid-row: 5 / 6;
+        display: block;
+        padding: 1rem;
+    }
+
+        .fantasy {
+            max-width: 100%;
+            margin: auto;
+        }
 
     .ftr-links {
         display: flex;
@@ -523,7 +669,7 @@ body {
         padding-inline: 1rem;
     }
     
-    .main-page-content {
+    .keyboard-section {
         display: grid;
         gap: 1.5rem;
         margin: 3rem 1rem;
@@ -549,6 +695,13 @@ body {
         display: grid;
         gap: 1rem;
         margin: 1rem;
+    }
+
+    .pc-games-section {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 3rem 1rem;
     }
 
     .heading-text-900 {
